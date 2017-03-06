@@ -1,13 +1,13 @@
 
-var os = require('os')
-var fs = require('fs')
-var path = require('path');
-var pty = require('pty.js');
+const os = require('os')
+const fs = require('fs')
+const path = require('path');
+const pty = require('pty.js');
 
-var yaml = require('js-yaml');
-var mustache = require('mustache');
-var express = require('express')
-var sio = require('socket.io')
+const yaml = require('js-yaml');
+const mustache = require('mustache');
+const express = require('express')
+const sio = require('socket.io')
 
 function TTY(command, actions) {
     var self = {};
